@@ -4,6 +4,10 @@
 
 Book Search uses the [Google Books API](https://developers.google.com/books/) to find volumes which match a given search query.
 
+Currently, the search functionality returns a list of books. 
+
+Each item in this list includes an image, title, author(s), publisher, and a link to learn more about the volume.
+
 ### Contributing
 
 To interact with this project locally, clone the repo and make sure you have the [lastest version of Node](https://nodejs.org/en/download/) installed.
@@ -12,7 +16,9 @@ Install dependencies with `npm install`
 
 Run the server with `node server.js`
 
-Now you can view the site on `localhost:3000` !
+Now you can view the site on `localhost:3000`!
+
+Pull requests, new issues, and feature requests are all welcome.
 
 ### My approach to building this app
 
