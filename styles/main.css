@@ -1,4 +1,23 @@
+body {
+  background-color: #C7B1C7;
+}
 #bookInfo {
+  font-family: 'Quicksand', sans-serif;
   border: 1px solid black;
-  margin: 1rem 5rem 1rem 5rem;
+  margin: 1rem 15rem 1rem 5rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 8px #888888;
+  background-color: #E8DFD4;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-family: 'Cormorant Garamond', serif;
 }
