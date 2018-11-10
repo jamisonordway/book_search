@@ -8,6 +8,9 @@ function getBooks(){
       data.items.forEach(function(book) {
         output += `
           <div id="bookInfo">
+          <div id="image">
+            <img src="${book.volumeInfo.imageLinks.smallThumbnail}">
+          </div>
             <div id="title">
               <h2>Volume Title: </h2>
               <p>${book.volumeInfo.title}</p>
