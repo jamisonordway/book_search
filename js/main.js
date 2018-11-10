@@ -7,14 +7,17 @@ function getBooks(){
       let output = '<h2>Books</h2>';
       data.items.forEach(function(book) {
         output += `
-          <div>
-            <h3>${book.volumeInfo.title}</h3>
+          <div id="bookInfo">
+            <h2>${book.volumeInfo.title}</h3>
+            <h3>${book.volumeInfo.authors}</h3>
+            <h3>${book.volumeInfo.publisher}</h3>
+            <a href="${book.volumeInfo.infoLink}">More info</a>
           </div>
         `;
       });
       document.getElementById('output').innerHTML = output;
     })
-
 }
+
 
 document.getElementById('getBooks').addEventListener('click', getBooks, false)
