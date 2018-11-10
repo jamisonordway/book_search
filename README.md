@@ -22,7 +22,7 @@ Pull requests, new issues, and feature requests are all welcome.
 
 ### My approach to building this app
 
-* I started by exploring the Google Books API and testing out calls in postman
+* I started by exploring the Google Books API and testing out calls in [Postman](https://www.getpostman.com/)
 
 * Once I understood what data to expect from the JSON response I created a function with vanilla JS
 
