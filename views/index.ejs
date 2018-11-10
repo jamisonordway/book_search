@@ -1,0 +1,20 @@
+<head>
+  <title>Book Finder</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Book Finder</h1>
+  <input id="search" placeholder="Search for books!">
+  <button id="getBooks" type="button">Search</button>
+  <div id="output"></div>
+  <p>
+    Note: Some books don't have publisher information available on this page. 
+    Click the "more info" link to learn more about a volume.
+  </p>
+  <!-- The API doesn't have publisher info for every book, so in a future iteration I would 
+      like to learn how to use ternary operators to return a message in the case that the
+      'publisher' attribute is missing from a given result. -->
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>

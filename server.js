@@ -1,26 +1,22 @@
-// const http = require('http');
-// const hostname = '127.0.0.1';
-// const port = 3000;
-
-const express = require('express');
+var express = require('express');
+var path = require('path');
 const app = express();
 app.set('view engine', 'ejs');
+app.set('port', process.env.PORT || 8000)
 app.listen(3000);
+app.use(express.static(path.join(__dirname, 'client')))
 
-// const server = http.createServer(function(req, res) {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Server Works/n');
-// });
+app.listen(app.get('port'), () => {
+  console.log(`app is listening on ${app.get('port')}`)
+})
 
-// server.listen(port, hostname, function() {
-//   console.log('Server running at http://'+ hostname + ':' + port + '/');
-// });
-
-app.get('/search', function(req, res) {
-  res.render('index.html')
+app.get('/', function(req, res) {
+  res.render('index')
 })
 
 app.get('*', function(req, res) {
   res.render('error');
 });
+
+
+module.exports = app;
