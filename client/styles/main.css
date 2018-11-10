@@ -4,8 +4,8 @@ body {
 #bookInfo {
   font-family: 'Quicksand', sans-serif;
   border: 1px solid black;
-  margin: 1rem 15rem 1rem 5rem;
-  padding: 1rem;
+  margin: 10% 10% 10% 10%;
+  padding: 5%;
   box-shadow: 5px 5px 8px #888888;
   background-color: #E8DFD4;
 }
