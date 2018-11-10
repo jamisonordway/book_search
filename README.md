@@ -4,6 +4,15 @@
 
 Book Search uses the [Google Books API](https://developers.google.com/books/) to find volumes which match a given search query.
 
+### Contributing
+
+To interact with this project locally, clone the repo and make sure you have the [lastest version of Node](https://nodejs.org/en/download/) installed.
+
+Install dependencies with `npm install`
+
+Run the server with `node server.js`
+
+Now you can view the site on `localhost:3000` !
 
 ### My approach to building this app
 
