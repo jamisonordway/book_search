@@ -21,9 +21,9 @@ Book Search uses the [Google Books API](https://developers.google.com/books/) to
 
 * I reverted to Express and EJS, researching and troubleshooting client side scripting
 
-* After realizing I was simply missing line 7 of `server.js` 
+* I researched this issue and found that I needed to serve the script as a static file in `server.js` 
 
-* I was able to add `app.use(express.static(path.join(__dirname, 'client')))` and have the same functionality on localhost:3000 that I had in VS Code's live server
+* After adding `app.use(express.static(path.join(__dirname, 'client')))` I was back to the same functionality on localhost:3000 that I had in VS Code's live server
 
 * I reorganized my file tree and deployed to Heroku.
 
